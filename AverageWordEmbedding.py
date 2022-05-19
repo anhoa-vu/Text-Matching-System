@@ -15,7 +15,7 @@ class AverageWordEmbedding:
 
         print("Embedding All Question 2 data...")
         vec = []
-        for ques in (self.data['processed_ques2'][0:5000]): 
+        for ques in (self.data['processed_ques2']): 
             val = self.averaging(ques) 
             vec.append(val)
         self.q2_embedding = np.array(vec) # store average word embedding of all question 2
